@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup Page</title>
+    
+    <link rel="stylesheet" href="style1.css">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
+	<!DOCTYPE html>
+    <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script>
+function validate(){
+    var name=document.stud_form.name;
+    var email=document.stud_form.email;
+    var mobile=document.stud_form.mobile;
+    var gender=document.stud_form.gender;
+    var course=document.stud_form.course;
+    var program=document.stud_form.program;
+    if(name.value.length<=0){
+        alert("Name is required")
+        name.focus()
+        return false;
+    }
+    if(mobile.value.length<=0){
+        alert("Mobile No is required")
+        mobile.focus()
+        return false;
+    }
+    if(email.value.length<=0){
+        alert("Email is required")
+        email.focus()
+        return false;
+    }
+    
+  
+   
+
+}
+function validateString(id){
+    var element=document.getElementById(id);
+    var regExp=/^[a-zA-Z0-9]{15}$/;
+    if(!regExp.test(element.value)){
+        alert("Enter valid String");
+        return false;
+    }
+}
+function validateEmail(id){
+    var element=document.getElementById(id);
+    var regExp=/^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,4}$/;
+    if(!regExp.test(element.value)){
+        alert("Enter valid Email");
+        return false;
+    }
+
+}
+function validateNumb(id){
+        var element=document.getElementById(id);
+        var regExp=/^[0-9]{11}$/;
+        if(!regExp.test(element.value)){
+            alert("enter valide number")
+            return false;
+        }
+    }
+
+    </script>
+    
+
+</head>
+<body > 
+      
+           
+<div class="container" >
+   <div class="sign-up">
+    <h1 class="heading">signup</h1>
+	<form method="" action="" name="stud_form" onsubmit="return validate()">
+    <div class="text">
+    <img height="20px" src="user.png" />
+	<label>Name:</label>
+    <input type="text" name="name" id="name" onblur="validateString(this.id)">
+    </div>
+    <div class="text">
+    <img height="12px" src="contact.png" />
+	<label>Mobile:</label>   
+    <input type="number" name="mobile" id="number" onblur="validateNumb(this.id)">
+    </div>
+    <div class="text">
+    <img height="20px" src="email.png" />
+    <input type="text" name="email" id="email" onblur="validateEmail(this.id)">  
+    </div>
+    <div class="trems">
+    <input type="checkbox" />
+    <p class="conditions">I read and agree to <a href="#">Trems &amp; Conditions</a></p>
+    </div>
+   <button>CREATE ACCOUNT</button>
+</form>
+    
+    </div>
+    </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+</body>
+</html>
